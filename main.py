@@ -14,10 +14,10 @@ if __name__ == '__main__':
     #print(img.shape)
     #showImage(img)
 
-
-
     for i in file_list:
+
         image_frame = pd.read_csv('Chip_Thorlabs_100_um/' +   i)
         img = image_frame.to_numpy(dtype=np.uint8)
+
         print(img.shape)
-        showImage(img)
+        #showImage(img)
